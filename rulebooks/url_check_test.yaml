@@ -13,9 +13,4 @@
       action:
         debug:
           msg: "DOWN: {{ event.url_check.url }}. Full event: {{ event }}"
-    - name: General Infor
-      condition: event.url_check.status == "up"
-      action:
-        debug:
-          msg: "UP: {{ event }}"
 ...
