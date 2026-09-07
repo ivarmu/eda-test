@@ -11,7 +11,7 @@
       condition: event.payload.status == "critical"
       action:
         run_job_template:
-          name: "Demo Job Template"
+          name: "eda-tests"
           organization: "Default"
           job_args:
             extra_vars:
