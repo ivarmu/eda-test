@@ -2,9 +2,9 @@
 - name: Check webserver availability
   hosts: all
   sources:
-    - ansible.eda.url_check:
+    - community.eda.url_check:
         urls:
-          - https://google.com
+          - http://192.168.122.1:8080
         delay: 60
 
   rules:
